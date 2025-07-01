@@ -1,5 +1,5 @@
-import time
-from datetime import datetime, timedelta
+import time # importa a biblioteca time para simular o tempo de espera
+from datetime import datetime, timedelta # importa datetime e timedelta para manipulação de datas e horas
 
 def lembrete_agua():
     print("=== Sistema de Lembrete para Beber Água ===")
@@ -33,7 +33,7 @@ def lembrete_agua():
         while hora_atual <= fim_do_dia:
             print(f"[{hora_atual.strftime('%H:%M')}] 💧 Hora de beber água!")
             hora_atual += timedelta(minutes=intervalo)
-            time.sleep(1)  # Simula o tempo de espera. Aumente para testar em tempo real
+            time.sleep(1)  # Simula o tempo de espera
 
         print("\n✅ Fim dos lembretes de hoje. Parabéns por se hidratar!")
 
